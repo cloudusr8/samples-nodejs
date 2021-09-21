@@ -1,0 +1,25 @@
+
+import fetch from "node-fetch";
+const url = "https://jsonplaceholder.typicode.com/users";
+
+const getData = async url => {
+  const options = {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json;charset=UTF-8'
+    }
+  };
+
+  try {
+    const response = await fetch(url, options);
+    const data = await response.json()
+    const names = data.map(a => a.name)
+    // const names = data.filter(a => a.name.includes('Glenna'))
+    console.log(names);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+getData(url);
