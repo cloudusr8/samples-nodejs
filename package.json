@@ -7,7 +7,11 @@
     "sort": "nodemon src/sort.js",
     "recipe": "nodemon src/recipe.js",
     "axios": "nodemon src/axios.js",
-    "fetch": "nodemon src/fetch.mjs"
+    "fetch": "nodemon src/fetch.mjs",
+    "test1": "nodemon src/promise.js",
+    "test2": "nodemon src/emitter.js",
+    "test3": "nodemon src/settimeout.js",
+    "test4": "nodemon src/stream.js"
   },
   "dependencies": {
     "axios": "^0.21.4",
