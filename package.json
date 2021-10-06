@@ -1,5 +1,5 @@
 {
-  "name": "sort",
+  "name": "sample",
   "version": "1.0.0",
   "main": "app.js",
   "license": "MIT",
@@ -8,15 +8,18 @@
     "recipe": "nodemon src/recipe.js",
     "axios": "nodemon src/axios.js",
     "fetch": "nodemon src/fetch.mjs",
-    "test1": "nodemon src/promise.js",
-    "test2": "nodemon src/emitter.js",
-    "test3": "nodemon src/settimeout.js",
-    "test4": "nodemon src/stream.js"
+    "promise": "nodemon src/promise.js",
+    "emitter": "nodemon src/emitter.js",
+    "settimeout": "nodemon src/settimeout.js",
+    "stream": "nodemon src/stream.js",
+    "asynclock": "nodemon src/asynclock.js"
   },
   "dependencies": {
+    "async-lock": "^1.3.0",
     "axios": "^0.21.4",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "memcached": "^2.2.2",
     "node-fetch": "^3.0.0",
     "nodemon": "^2.0.12"
   }
